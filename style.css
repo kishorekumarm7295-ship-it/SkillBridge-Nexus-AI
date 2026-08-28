@@ -1,0 +1,631 @@
+/* =========================
+   SkillBridge Nexus AI UI
+   Professional Theme
+========================= */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+
+body{
+
+    background:#f8fafc;
+    color:#0f172a;
+
+}
+
+
+
+/* =====================
+ NAVBAR
+===================== */
+
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:white;
+
+    position:sticky;
+    top:0;
+
+    z-index:100;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:800;
+
+    color:#2563eb;
+
+}
+
+
+.logo span{
+
+    color:#0f172a;
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#334155;
+
+    font-weight:500;
+
+}
+
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+/* BUTTON */
+
+
+.primary-btn{
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* =====================
+ HERO SECTION
+===================== */
+
+
+.hero{
+
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:70px 8%;
+
+
+    background:
+
+    radial-gradient(
+    circle at top left,
+    #dbeafe,
+    transparent 40%
+    );
+
+}
+
+
+
+
+.hero-content{
+
+    width:55%;
+
+}
+
+
+
+.hero-content h1{
+
+
+    font-size:65px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+}
+
+
+
+.hero-content h1 span{
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #9333ea
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+}
+
+
+
+
+.hero-content p{
+
+
+    margin:25px 0;
+
+    font-size:18px;
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/* =====================
+ AI CARD
+===================== */
+
+
+.ai-card{
+
+
+    width:350px;
+
+
+    padding:35px;
+
+
+    background:
+
+    rgba(255,255,255,0.8);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 25px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+.ai-card h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.score{
+
+
+    font-size:60px;
+
+    font-weight:800;
+
+    color:#2563eb;
+
+}
+
+
+
+.progress{
+
+
+    height:12px;
+
+    background:#e2e8f0;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress span{
+
+
+    display:block;
+
+    width:92%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #22c55e
+    );
+
+
+}
+
+
+
+
+
+/* =====================
+ FEATURES
+===================== */
+
+
+.section{
+
+
+    padding:90px 8%;
+
+}
+
+
+
+.section-title{
+
+
+    text-align:center;
+
+    font-size:40px;
+
+    font-weight:800;
+
+}
+
+
+
+.cards{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+.card{
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    transition:.3s;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 20px 40px rgba(37,99,235,.2);
+
+
+}
+
+
+
+.card-icon{
+
+
+    font-size:45px;
+
+}
+
+
+
+/* =====================
+ DASHBOARD STYLE
+===================== */
+
+
+.dashboard{
+
+
+    display:flex;
+
+
+}
+
+
+
+.sidebar{
+
+
+    width:260px;
+
+    height:100vh;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:30px;
+
+
+}
+
+
+
+
+.sidebar a{
+
+
+    display:block;
+
+    color:#cbd5e1;
+
+
+    text-decoration:none;
+
+
+    padding:15px;
+
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+
+
+
+.dashboard-content{
+
+
+    flex:1;
+
+    padding:40px;
+
+
+}
+
+
+
+
+.stat-card{
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 30px #ddd;
+
+
+}
+
+
+
+
+/* =====================
+ CHATBOT
+===================== */
+
+
+.chat-button{
+
+
+    position:fixed;
+
+
+    right:30px;
+
+    bottom:30px;
+
+
+    width:70px;
+
+    height:70px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #9333ea
+    );
+
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+
+
+/* =====================
+ FOOTER
+===================== */
+
+
+.footer{
+
+
+    background:#0f172a;
+
+
+    color:white;
+
+
+    padding:40px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* =====================
+ RESPONSIVE
+===================== */
+
+
+@media(max-width:900px){
+
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+
+.hero-content{
+
+    width:100%;
+
+}
+
+
+.hero-content h1{
+
+    font-size:40px;
+
+}
+
+
+
+.cards{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+.nav-links{
+
+display:none;
+
+}
+
+
+}
